@@ -7,8 +7,13 @@
 
 const path = require('path');
 
-global.project = {};
-global.project.root = path.resolve(__dirname, '../../');
+/**
+ * 初始化es6mvc相关变量
+ */
+(function initializeES6MVC(){
+    global.project = {};
+    global.project.root = path.resolve(__dirname, '../../');
+})();
 
 global.gconf = require('../resources/config/config');
 //global.$ = getLodash();

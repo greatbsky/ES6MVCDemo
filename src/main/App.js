@@ -6,7 +6,6 @@
  */
 
 require('./Global');
-//const es6mvc = require('./../../../ES6MVC/src/main/App');
 const es6mvc = require('es6mvc');
 const log = Log(__filename);
 
