@@ -1,13 +1,13 @@
 {
   "name": "ES6MVCDemo",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "private": true,
   "description": "a demo of es6mvc",
   "scripts": {
     "start": "node ./bin/startup.js"
   },
   "dependencies": {
-    "es6mvc": "0.0.3"
+    "es6mvc": "^0.0.4"
   },
   "devDependencies": {},
   "repository": {

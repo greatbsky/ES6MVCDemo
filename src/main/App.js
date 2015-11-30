@@ -20,4 +20,14 @@ module.exports = class App extends es6mvc {
         super.initialize(path.resolve(__dirname, '../../'));
         super.run();
     }
+
+    /**
+     * 初始化模块
+     * @param appModules
+     * @param app
+     */
+    static initModules(appModules, app) {
+        appModules.initMongoDB();
+        super.initModules(appModules, app);
+    }
 }
