@@ -1,16 +1,15 @@
 {
   "name": "ES6MVCDemo",
-  "version": "0.0.1",
+  "version": "0.0.3",
   "private": true,
   "description": "a demo of es6mvc",
   "scripts": {
     "start": "node ./bin/startup.js"
   },
   "dependencies": {
-    "es6mvc": "^0.0.1"
+    "es6mvc": "0.0.3"
   },
-  "devDependencies": {
-  },
+  "devDependencies": {},
   "repository": {
     "url": "https://github.com/greatbsky/ES6MVCDemo.git"
   }
