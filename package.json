@@ -9,7 +9,13 @@
   "dependencies": {
     "es6mvc": "^0.0.4"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "chai": "^3.4.1",
+    "del": "^2.1.0",
+    "gulp": "^3.9.0",
+    "gulp-mocha": "^2.2.0",
+    "mocha": "^2.3.4"
+  },
   "repository": {
     "url": "https://github.com/greatbsky/ES6MVCDemo.git"
   }

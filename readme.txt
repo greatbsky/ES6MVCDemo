@@ -4,6 +4,11 @@ https://github.com/koajs/koa/tree/master/docs/api
 https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference
 
 
+
+下载npm包：
+npm install
+
+
 启动：
 npm start 或 node ./bin/startup.js
 

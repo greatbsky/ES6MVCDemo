@@ -26,8 +26,8 @@ module.exports = class App extends es6mvc {
      * @param appModules
      * @param app
      */
-    static initModules(appModules, app) {
-        appModules.initMongoDB();
-        super.initModules(appModules, app);
+    static initModules(modules, app) {
+        modules.initMongoDB();
+        super.initModules(modules, app);
     }
 }
