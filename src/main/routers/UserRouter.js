@@ -32,4 +32,14 @@ module.exports = function(router) {
         return "500";
     });
 
+    /*登录验证*/
+    router.post('/book/admin/login', (ctx, next) => {
+    	console.log(ctx.request.body);
+    	console.log('ctx.request.body.name:' + ctx.request.body.name);
+    	if(ctx.request.body.name == 'admin' && ctx.request.body.pwd == '123456') {
+    		return 'index';
+    	}
+    	ctx.model.errmsg = 'pwd or name is wrong';
+    	return 'login';
+    });
 }
