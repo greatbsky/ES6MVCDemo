@@ -18,7 +18,7 @@ module.exports = function(router) {
      500页
      */
     router.get('/err/500', (ctx, next) => {
-        ctx.body = "<h1>500</h1>h1>";
+        ctx.body = "<h1>500</h1>";
     });
 
 }

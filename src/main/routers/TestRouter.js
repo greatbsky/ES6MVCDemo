@@ -20,9 +20,15 @@ module.exports = function(router) {
 
     router.get('/test/cookie', (ctx, next) => {
         var count = ctx.cookies.get('count');
-        log.debug(count);
-        var n = Number.parseInt(count) + 1;
-        ctx.cookies.set('count', n);
+        log.debug('count:' + count);
+        log.debug('isNum:' + NumUtil.isNum(count));
+        if(NumUtil.isNum(count)) {
+            var n = Number.parseInt(count) + 1;
+        } else {
+            var n = 0;
+        }
+        ctx.cookies.set('count', String(n));
+        ctx.body = 'curr count in cookie:' + n;
     });
 
     router.get('/test/session', (ctx, next) => {

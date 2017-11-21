@@ -82,7 +82,7 @@ module.exports = {
     'router': {
         regex: new RegExp(/.*Router.js$/),
         transports: {
-            console: defaultConsoleTransportHandler('info', 'router'),
+            console: defaultConsoleTransportHandler('debug', 'router'),
             file: defaultFileTransportHandler('info', 'logs/router.log', 'router')
         }
     },
