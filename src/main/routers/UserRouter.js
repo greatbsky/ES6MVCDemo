@@ -42,4 +42,11 @@ module.exports = function(router) {
     	ctx.model.errmsg = 'pwd or name is wrong';
     	return 'login';
     });
+
+    router.get('/await', async (ctx, next) => {
+        const timeout = ms => new Promise((resolve) => setTimeout(resolve, ms));
+        await timeout(5000);
+        ctx.body = "wait for 5seconds";
+    });
+
 }
